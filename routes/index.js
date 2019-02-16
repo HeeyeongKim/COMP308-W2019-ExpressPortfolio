@@ -7,19 +7,19 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/about', (req, res, next) => {
-  res.render('index', { title: 'About' });
+  res.render('about/index', { title: 'About' });
 });
 
 router.get('/contact', (req, res, next) => {
-  res.render('index', { title: 'Contact' });
+  res.render('contact/index', { title: 'Contact' });
 });
 
 router.get('/projects', (req, res, next) => {
-  res.render('index', { title: 'Projects' });
+  res.render('projects/index', { title: 'Projects' });
 });
 
 router.get('/services', (req, res, next) => {
-  res.render('index', { title: 'Services' });
+  res.render('services/index', { title: 'Services' });
 });
 
 module.exports = router;
