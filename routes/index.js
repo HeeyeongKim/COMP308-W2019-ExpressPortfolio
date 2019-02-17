@@ -1,23 +1,34 @@
+/*
+ COMP308-W2019-Assignment1 (ExpressPortfolio)
+ Student Name: Heeyeong Kim
+ Student Number: 300954759
+ Date: 02/16/2019
+*/
+
 let express = require('express');
 let router = express.Router();
 
-/* GET home page. */
+/* GET Home Page. */
 router.get('/', (req, res, next) => {
   res.render('index', { title: 'Home' });
 });
 
+/* GET About Page. */
 router.get('/about', (req, res, next) => {
   res.render('about/index', { title: 'About' });
 });
 
+/* GET Contact Page. */
 router.get('/contact', (req, res, next) => {
   res.render('contact/index', { title: 'Contact' });
 });
 
+/* GET Project Page. */
 router.get('/projects', (req, res, next) => {
   res.render('projects/index', { title: 'Projects' });
 });
 
+/* GET Service Page. */
 router.get('/services', (req, res, next) => {
   res.render('services/index', { title: 'Services' });
 });
